@@ -1,0 +1,390 @@
+/* ------------------------------------------------------- Mapa CHKO ----------------------------------------------------- */
+
+section.mapaCHKO {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 82%;
+    margin-left: 9%;
+    padding: 80px 0 20px 0;
+}
+
+section.mapaCHKO .mapaImg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: calc(100% - 360px);
+    height: auto;
+    gap: 80px;
+    padding: 40px 0 40px 40px;
+}
+
+section.mapaCHKO .mapaImg .mapaImg_text {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+}
+
+section.mapaCHKO .mapaImg .mapaImg_text h4 {
+    color: #353535;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.mapaCHKO .mapaImg .mapaImg_text h4 span {
+    font-weight: bold;
+    color: #006c4e;
+}
+
+section.mapaCHKO .mapaImg .mapaImg_text p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+    text-align: justify;
+}
+
+section.mapaCHKO .mapaImg img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+section.mapaCHKO .domyPrirody {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+}
+
+section.mapaCHKO .domyPrirody .domyPrirody_Img {
+    width: 100%;
+    height: 350px;
+}
+
+section.mapaCHKO .domyPrirody .domyPrirody_Img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+section.mapaCHKO .domyPrirody .domyPrirody_TextBox {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    padding: 10px 20px 50px 20px;
+    top: -60px;
+    gap: 60px;
+    border-radius: 10px 0 0 0;
+    background-color: #FFF;
+}
+
+section.mapaCHKO .domyPrirody .domyPrirody_TextBox h4 {
+    color: #353535;
+    font-size: 25px;
+}
+
+section.mapaCHKO .domyPrirody .domyPrirody_TextBox h4 span,
+section.mapaCHKO .domyPrirody .domyPrirody_TextBox p span {
+    font-weight: bold;
+    color: #006c4e;
+}
+
+section.mapaCHKO .domyPrirody .domyPrirody_TextBox p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+    text-align: justify;
+}
+
+section.mapaCHKO .domyPrirody button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+    height: 60px;
+    padding: 0 25px;
+    top: -60px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #006c4e;
+    transition: .5s;
+    cursor: pointer;
+}
+
+section.mapaCHKO .domyPrirody button:hover {
+    background-color: #f68d1f;
+}
+
+section.mapaCHKO .domyPrirody button span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+section.mapaCHKO .domyPrirody button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    color: #353535;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: .5s;
+}
+
+section.mapaCHKO .domyPrirody button:hover i {
+    color: #f68d1f;
+}
+
+/* ---------------- Mapa CHKO - responzivita ----------------- */
+
+@media screen and (max-width: 1500px) {
+    section.mapaCHKO .mapaImg img {
+        max-width: 600px;
+    }
+
+    section.mapaCHKO .domyPrirody {
+        width: 450px;
+    }
+
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox,
+    section.mapaCHKO .domyPrirody button {
+        width: 80%;
+    }
+
+    section.mapaCHKO .domyPrirody .domyPrirody_Img {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    section.mapaCHKO {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section.mapaCHKO .mapaImg {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    section.mapaCHKO .mapaImg .mapaImg_text p {
+        text-align: center;
+    }
+    
+    section.mapaCHKO .mapaImg img {
+        max-width: 800px;
+    }
+    
+    section.mapaCHKO .domyPrirody {
+        width: 700px;
+        margin-top: 40px;
+    }
+    
+    section.mapaCHKO .domyPrirody .domyPrirody_Img {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.mapaCHKO .domyPrirody {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.mapaCHKO {
+        padding-top: 157px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.mapaCHKO .domyPrirody .domyPrirody_Img {
+        height: 380px;
+    }
+
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox {
+        gap: 50px;
+    }
+    
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox h4 {
+        font-size: 22px;
+    }
+    
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.mapaCHKO {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section.mapaCHKO .domyPrirody .domyPrirody_Img {
+        height: 300px;
+    }
+
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox {
+        gap: 30px;
+    }
+
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox,
+    section.mapaCHKO .domyPrirody button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section.mapaCHKO .domyPrirody .domyPrirody_TextBox,
+    section.mapaCHKO .domyPrirody button {
+        width: 100%;
+    }
+}
+
+/* ---------------- Mapa CHKO - responzivita ----------------- */
+
+/* ------------------------------------------------------- Mapa CHKO ----------------------------------------------------- */
+
+/* ------------------------------------------------------ Seznam CHKO ---------------------------------------------------- */
+
+section.odkazyNaCHKO {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 82%;
+    margin-left: 9%;
+    padding: 80px 0 0 0;
+}
+
+/* ------------------ Seznam CHKO - odkazy ------------------- */
+
+section.odkazyNaCHKO {
+    padding: 10px 0 40px 0;
+}
+
+section.odkazyNaCHKO .seznamCHKO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 30px 0;
+}
+
+section.odkazyNaCHKO .seznamCHKO h4 {
+    text-align: center;
+    font-size: 25px;
+    color: #353535;
+}
+
+section.odkazyNaCHKO .seznamCHKO h4 span {
+    color: #006c4e;
+}
+
+section.odkazyNaCHKO .seznamCHKO .radek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    gap: 40px 80px;
+}
+
+section.odkazyNaCHKO .seznamCHKO .radek .odkazy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+section.odkazyNaCHKO .seznamCHKO .radek .odkazy a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 350px;
+    font-size: 16px;
+    color: #006c4e;
+    transition: .5s;
+}
+
+section.odkazyNaCHKO .seznamCHKO .radek .odkazy a i {
+    font-size: 16px;
+    color: #FFF;
+    padding: 6px 12px;
+    margin-left: 10px;
+    background-color: rgb(53, 53, 53, .5);
+    border-radius: 2px;
+    transition: .5s;
+}
+
+section.odkazyNaCHKO .seznamCHKO .radek .odkazy a:hover p {
+    text-decoration: underline;
+}
+
+section.odkazyNaCHKO .seznamCHKO .radek .odkazy a:hover i {
+    background-color: #f68d1f;
+}
+
+/* ------------------ Seznam CHKO - odkazy ------------------- */
+
+/* --------------- Seznam CHKO - responzivita ---------------- */
+
+@media screen and (max-width: 1024px) {
+    section.odkazyNaCHKO .seznamCHKO .radek {
+        gap: 15px 80px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section.odkazyNaCHKO .seznamCHKO .radek {
+        gap: 15px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.odkazyNaCHKO .seznamCHKO .radek .odkazy a {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.odkazyNaCHKO .seznamCHKO .radek .odkazy {
+        width: 100%;
+    }
+
+    section.odkazyNaCHKO .seznamCHKO .radek .odkazy a {
+        min-width: 0;
+    }
+}
+
+/* --------------- Seznam CHKO - responzivita ---------------- */
+
+/* ------------------------------------------------------ Seznam CHKO ---------------------------------------------------- */

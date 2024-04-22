@@ -1,0 +1,202 @@
+/* ------------------------------------------------ Ústředí AOPK ČR ----------------------------------------------- */
+
+section.regionalniPracoviste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 82%;
+    margin-left: 9%;
+    padding: 80px 0 30px 0;
+}
+
+section.regionalniPracoviste .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin-bottom: 25px;
+    gap: 8px;
+}
+
+section.regionalniPracoviste .text h4 {
+    color: #353535;
+    font-size: 25px;
+}
+
+section.regionalniPracoviste .text h4 span {
+    font-weight: bold;
+    color: #006c4e;
+}
+
+section.regionalniPracoviste .text p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+}
+
+section.regionalniPracoviste img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+/* -------------- Ústředí AOPK ČR - responzivita ------------- */
+
+@media screen and (max-width: 1350px) {
+    section.regionalniPracoviste {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.regionalniPracoviste {
+        margin-top: 80px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.regionalniPracoviste .text h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.regionalniPracoviste {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.regionalniPracoviste {
+        margin-top: 80px;
+    }
+}
+
+/* -------------- Ústředí AOPK ČR - responzivita ------------- */
+
+/* ------------------------------------------------ Ústředí AOPK ČR ----------------------------------------------- */
+
+/* ------------------------------------------- Potřebuji vyřídit - odkazy ----------------------------------------- */
+
+section.potrebujiVyriditOdkazy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 82%;
+    margin: 0 9%;
+    padding: 80px 40px;
+    gap: 40px 0;
+}
+
+section.potrebujiVyriditOdkazy .sloupec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 8px 0;
+}
+
+section.potrebujiVyriditOdkazy .sloupec:nth-child(2) {
+    padding-left: 50px;
+}
+
+section.potrebujiVyriditOdkazy .sloupec h3 {
+    font-size: 25px;
+    color: #353535;
+    margin-bottom: 7px;
+}
+
+section.potrebujiVyriditOdkazy .sloupec h3 span {
+    color: #006c4e;
+}
+
+section.potrebujiVyriditOdkazy .sloupec a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: auto;
+    font-size: 15px;
+    transition: .5s;
+}
+
+section.potrebujiVyriditOdkazy .sloupec a i {
+    font-size: 7px;
+    color: #f68d1f;
+    margin-right: 8px;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+section.potrebujiVyriditOdkazy .sloupec a p {
+    color: #006c4e;
+    margin: 0;
+    text-align: sloupec;
+}
+
+section.potrebujiVyriditOdkazy .sloupec a:hover p {
+    text-decoration: underline;
+}
+
+/* ------------ Potřebuji vyřídit - responzivita ------------- */
+
+@media screen and (max-width: 1600px) {
+    section.potrebujiVyriditOdkazy {
+        padding: 80px 0;
+    }
+    
+    section.potrebujiVyriditOdkazy .sloupec {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    section.potrebujiVyriditOdkazy .sloupec {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    section.potrebujiVyriditOdkazy {
+        flex-direction: column;
+        padding: 40px 0 80px 0;
+    }
+
+    section.potrebujiVyriditOdkazy .sloupec {
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 25px;
+    }
+    
+    section.potrebujiVyriditOdkazy .sloupec:nth-child(2) {
+        width: 100%;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.potrebujiVyriditOdkazy .sloupec h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section.potrebujiVyriditOdkazy .sloupec,
+    section.potrebujiVyriditOdkazy .sloupec:nth-child(2) {
+        padding-left: 0;
+    }
+}
+
+/* ------------ Potřebuji vyřídit - responzivita ------------- */
+
+/* ------------------------------------------- Potřebuji vyřídit - odkazy ----------------------------------------- */

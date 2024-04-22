@@ -1,0 +1,319 @@
+/* -------------------------------------------------------- Slider ------------------------------------------------------- */
+
+section.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 82%;
+    margin-left: 9%;
+    padding: 80px 0 0 0;
+}
+
+section.slider .sliderCHKO {
+    width: 1100px;
+    height: auto;
+    min-height: 550px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+section.slider .sliderCHKO .polozky{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO:nth-child(1) {
+    background-image: url(../img/CHKO/landingBeskydy.webp);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO:nth-child(2) {
+    background-image: url(../img/CHKO/landingBileKarpaty.webp);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO:nth-child(3) {
+    background-image: url(../img/CHKO/landingBlanik.webp);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO:nth-child(4) {
+    background-image: url(../img/LandingIMG/Domy-prirody-a-informacni-strediska.webp);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO:nth-child(5) {
+    background-image: url(../img/CHKO/landingBrdy.webp);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO:nth-child(6) {
+    background-image: url(../img/CHKO/landingBroumov.webp);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 65vw;
+    height: auto;
+    padding: 30px;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO h6 {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #f68d1f;
+    margin-bottom: 0;
+    text-shadow: 0 5px 10px #0004;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO h3 {
+    font-weight: bold;
+    color: #FFF;
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 0 5px 10px #0004;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: justify;
+    width: 90%;
+    margin: 10px 0 25px 0;
+    text-shadow: 0 5px 10px #0004;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO .odkazNaCHKO button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    color: #353535;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 26px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO .odkazNaCHKO button i {
+    font-size: 15px;
+    color: #353535;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO .odkazNaCHKO button:hover {
+    background-color: #006c4e;
+    color: #fff;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO .odkazNaCHKO button:hover i {
+    color: #fff;
+    transform: translateX(4px);
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 35vw;
+    height: auto;
+    padding: 30px;
+    gap: 20px;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO button {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 0 14px;
+    font-size: 15px;
+    color: #006c4e;
+    background-color: rgb(238, 238, 238, .9);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO button:hover {
+    text-decoration: underline;
+}
+
+section.slider .sliderCHKO .posuvneTecky{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+section.slider .sliderCHKO .posuvneTecky li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+section.slider .sliderCHKO .posuvneTecky li.active{
+    width: 30px;
+    background-color: #f68d1f;
+}
+
+section.slider .tlacitkaCHKO{
+    position: absolute;
+    top: calc(50% + 25px);
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.slider .tlacitkaCHKO button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(53, 53, 53, .5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.slider .tlacitkaCHKO button:hover {
+    background-color: rgb(0, 108, 78);
+}
+
+/* ----------------- Slider - responzivita ------------------- */
+
+@media screen and (max-width: 1350px) {
+    section.slider .sliderCHKO {
+        width: 100%;
+    }
+    
+    section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO {
+        width: 65vw;
+    }
+    
+    section.slider .tlacitkaCHKO{
+        width: 100vw;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    section.slider .sliderCHKO {
+        min-height: 650px;
+    }
+
+    section.slider .sliderCHKO .polozky .polozkaCHKO {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO {
+        width: 83vw;
+    }
+    
+    section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO {
+        align-items: flex-end;
+        width: 83vw;
+    }
+
+    section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO p {
+        width: 100%;
+    }
+
+    section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO {
+        padding: 0 30px;
+    }
+    
+    section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO button {
+        width: 380px;
+    }
+    
+    section.slider .tlacitkaCHKO button {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section.slider .sliderCHKO {
+        min-height: 750px;
+    }
+    section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO {
+        align-items: flex-start;
+    }
+
+    section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO {
+        padding: 40px 30px;
+    }
+    
+    section.slider .tlacitkaCHKO button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO h3 {
+        font-size: 28px;
+    }
+    
+    section.slider .sliderCHKO .polozky .polozkaCHKO .textCHKO .odkazNaCHKO button {
+        padding: 12px 24px;
+    }
+
+    section.slider .sliderCHKO .polozky .polozkaCHKO .vyletyCHKO button {
+        width: 100%;
+        max-width: 380px;
+        height: 45px;
+    }
+
+    section.slider .tlacitkaCHKO{
+        display: none;
+    }
+}
+
+/* ----------------- Slider - responzivita ------------------- */
+
+/* -------------------------------------------------------- Slider ------------------------------------------------------- */

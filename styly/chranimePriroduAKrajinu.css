@@ -1,0 +1,406 @@
+/* ------------------------------------------- Chráníme přírodu a krajinu ----------------------------------------- */
+
+section.chranimePrirodu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 82%;
+    margin: 0 9%;
+    padding: 80px 40px;
+}
+
+section.chranimePrirodu .left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+}
+
+section.chranimePrirodu .left h3 {
+    font-size: 25px;
+    color: #353535;
+}
+
+section.chranimePrirodu .left h3 span {
+    color: #006c4e;
+}
+
+section.chranimePrirodu .left p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+    text-align: justify;
+    margin: 10px 0 25px 0;
+}
+
+section.chranimePrirodu .left button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 50px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006c4e;
+    transition: .5s;
+    cursor: pointer;
+}
+
+section.chranimePrirodu .left button:hover {
+    background-color: #f68d1f;
+}
+
+section.chranimePrirodu .left button span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+section.chranimePrirodu .left button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    color: #353535;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: .5s;
+}
+
+section.chranimePrirodu .left button:hover i {
+    color: #f68d1f;
+}
+
+section.chranimePrirodu .left h6 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #353535;
+    margin: 40px 0 15px 0;
+}
+
+section.chranimePrirodu .left .line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+section.chranimePrirodu .left .line a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 15px;
+    transition: .5s;
+}
+
+section.chranimePrirodu .left .line a p {
+    color: #006c4e;
+    margin: 0;
+    text-align: left;
+}
+
+section.chranimePrirodu .left .line a i {
+    font-size: 15px;
+    color: #FFF;
+    padding: 5px 11px;
+    margin-left: 10px;
+    background-color: rgb(53, 53, 53, .5);
+    border-radius: 2px;
+    transition: .5s;
+}
+
+section.chranimePrirodu .left .line a:hover p {
+    text-decoration: underline;
+}
+
+section.chranimePrirodu .left .line a:hover i {
+    background-color: #f68d1f;
+}
+
+section.chranimePrirodu .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+section.chranimePrirodu .right img {
+    width: 100%;
+    height: auto;
+}
+
+/* -------- Chráníme přírodu a krajinu - responzivita -------- */
+
+@media screen and (max-width: 1600px) {
+    section.chranimePrirodu {
+        padding: 80px 0;
+    }
+    
+    section.chranimePrirodu .left {
+        padding-left: 30px;
+    }
+    
+    section.chranimePrirodu .left button {
+        width: 280px;
+    }
+    
+    section.chranimePrirodu .right img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    section.chranimePrirodu .left {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    section.chranimePrirodu {
+        flex-direction: column;
+        padding: 80px 40px;
+        gap: 60px 0;
+    }
+    
+    section.chranimePrirodu .left {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    section.chranimePrirodu .left p {
+        width: 80%;
+    }
+    
+    section.chranimePrirodu .left button {
+        width: 300px;
+    }
+
+    section.chranimePrirodu .left .line {
+        gap: 0 35px;
+    }
+
+    section.chranimePrirodu .left .line a p {
+        width: 100%;
+    }
+
+    section.chranimePrirodu .right {
+        width: 100%;
+    }
+    
+    section.chranimePrirodu .right img {
+        width: 90%;
+        max-width: 850px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.chranimePrirodu {
+        margin-top: 80px;
+        padding: 80px 0;
+    }
+    
+    section.chranimePrirodu .left {
+        align-items: center;
+    }
+    section.chranimePrirodu .left h3 {
+        text-align: center;
+    }
+
+    section.chranimePrirodu .left p {
+        width: 100%;
+    }
+    
+    section.chranimePrirodu .left button {
+        width: 280px;
+    }
+
+    section.chranimePrirodu .left .line {
+        justify-content: center;
+        gap: 15px 0;
+    }
+    
+    section.chranimePrirodu .right img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.chranimePrirodu .left h3 {
+        font-size: 22px;
+    }
+
+    section.chranimePrirodu .left h6 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section.chranimePrirodu {
+        margin-top: 80px;
+    }
+    
+    section.chranimePrirodu .left {
+        align-items: center;
+    }
+    section.chranimePrirodu .left h3 {
+        text-align: center;
+    }
+
+    section.chranimePrirodu .left p {
+        width: 100%;
+    }
+    
+    section.chranimePrirodu .left button {
+        width: 280px;
+    }
+
+    section.chranimePrirodu .left .line {
+        justify-content: center;
+        gap: 15px 0;
+    }
+    
+    section.chranimePrirodu .right img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section.chranimePrirodu .left h3 span br {
+        display: none;
+    }
+
+    section.chranimePrirodu .left button {
+        width: 100%;
+    }
+}
+
+/* -------- Chráníme přírodu a krajinu - responzivita -------- */
+
+/* ------------------------------------------- Chráníme přírodu a krajinu ----------------------------------------- */
+
+/* ------------------------------------------------- Slider rubrik ------------------------------------------------ */
+
+section.slider#slider_ChranimePriroduAKrajinu,
+section.slider#slider_DokumentujemePrirodu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 82%;
+    margin: 0 0 80px 9%;
+    padding: 0;
+}
+
+section.slider#slider_ChranimePriroduAKrajinu h3,
+section.slider#slider_DokumentujemePrirodu h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #353535;
+    margin-bottom: 25px;
+}
+
+section.slider#slider_ChranimePriroduAKrajinu h3 span,
+section.slider#slider_DokumentujemePrirodu h3 span {
+    color: #006c4e;
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(1) {
+    background-image: url(../img/LandingIMG/ochrana-uzemi.webp);
+}
+
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO:nth-child(1) {
+    background-image: url(../img/LandingIMG/poskytovani-dat.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(2) {
+    background-image: url(../img/LandingIMG/ochrana-druhu.webp);
+}
+
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO:nth-child(2) {
+    background-image: url(../img/LandingIMG/ustredni-seznam-ochrany-prirody.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(3) {
+    background-image: url(../img/LandingIMG/ochrana-drevin.webp);
+}
+
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO:nth-child(3) {
+    background-image: url(../img/LandingIMG/mapova-galerie.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(4) {
+    background-image: url(../img/LandingIMG/ochrana-nezive-prirody.webp);
+}
+
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO:nth-child(4) {
+    background-image: url(../img/LandingIMG/nalezova-databaze-ochrany-prirody.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(5) {
+    background-image: url(../img/LandingIMG/ochrana-krajiny.webp);
+}
+
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO:nth-child(5) {
+    background-image: url(../img/LandingIMG/jendotna-evidence-speleologickych-objektu.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(6) {
+    background-image: url(../img/LandingIMG/invazivni-druhy.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(7) {
+    background-image: url(../img/LandingIMG/mezinarodni-ochrana-prirody.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO:nth-child(8) {
+    background-image: url(../img/LandingIMG/CITES.webp);
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO .textCHKO,
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO .textCHKO {
+    width: 100vw;
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO .textCHKO h3,
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO .textCHKO h3 {
+    color: #FFF;
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO .textCHKO p,
+section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO .textCHKO p {
+    width: 60%;
+}
+
+section.slider#slider_ChranimePriroduAKrajinu .tlacitkaCHKO
+section.slider#slider_DokumentujemePrirodu .tlacitkaCHKO {
+    top: 50%;
+}
+
+/* ----------------- Slider - responzivita ------------------- */
+
+@media screen and (max-width: 750px) {
+    section.slider#slider_ChranimePriroduAKrajinu .sliderCHKO .polozky .polozkaCHKO .textCHKO p {
+        width: 80%;
+    }
+
+    section.slider#slider_DokumentujemePrirodu .sliderCHKO .polozky .polozkaCHKO .textCHKO p {
+        width: 80%;
+    }
+}
+
+/* ----------------- Slider - responzivita ------------------- */
+
+/* ------------------------------------------------- Slider rubrik ------------------------------------------------ */

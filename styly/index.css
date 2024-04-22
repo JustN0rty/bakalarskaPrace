@@ -1,0 +1,1438 @@
+/* ------------------------------------------------- Landing page ------------------------------------------------- */
+
+section.landingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    margin-top: -210px;
+}
+
+section.landingPage .landingPageSlider {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru:nth-child(1) {
+    background-image: url(../img/LandingIMG/chranime-prirodu-a-krajinu.webp);
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru:nth-child(2) {
+    background-image: url(../img/LandingIMG/priblizujeme-prirodu-lidem.webp);
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru:nth-child(3) {
+    background-image: url(../img/LandingIMG/chranime-vzacne-druhy.webp);
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru:nth-child(4) {
+    background-image: url(../img/LandingIMG/pecujeme-o-prirodu-a-krajinu.webp);
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru:nth-child(5) {
+    background-image: url(../img/LandingIMG/dokumentujeme-prirodu.webp);
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 0 9%;
+    color: #FFF;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h5 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #f68d1f;
+    margin-bottom: 8px;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h2 {
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h2 span {
+    color: #f68d1f;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru p {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+    margin-top: 12px;
+    max-width: 750px;
+    text-shadow: 0 5px 10px #000;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru .odkazNaRubriku button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    color: #353535;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 26px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru .odkazNaRubriku button i {
+    font-size: 15px;
+    color: #353535;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru .odkazNaRubriku button:hover {
+    background-color: #006c4e;
+    color: #fff;
+}
+
+section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru .odkazNaRubriku button:hover i {
+    color: #fff;
+    transform: translateX(4px);
+}
+
+section.landingPage .landingPageSlider .posuvneTeckySlideru{
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+section.landingPage .landingPageSlider .posuvneTeckySlideru li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section.landingPage .landingPageSlider .posuvneTeckySlideru li.active{
+    width: 30px;
+    background-color: #f68d1f;
+}
+
+/* ---------- Landing page - responzivita ------------- */
+
+@media screen and (max-width: 1350px) {
+    section.landingPage {
+        margin-top: -167px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h5 {
+        font-size: 15px;
+        margin-bottom: 6px;
+        line-height: 14px;
+        letter-spacing: 4px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h2 {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru p {
+        font-size: 17px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru button {
+        padding: 12px 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.landingPage {
+        margin-top: -90px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h5 {
+        font-size: 14px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h2 {
+        font-size: 38px;
+        line-height: 43px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru p,
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru button,
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru i {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.landingPage {
+        margin-top: -80px;
+    }
+
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h5 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h2 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru p {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru p {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru button {
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+    
+    section.landingPage .landingPageSlider .polozkySlideru .polozkaSlideru .textSlideru button i {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section.landingPage {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    section.landingPage {
+        height: 100vh;
+    }
+
+    section.landingPage .landingPageSlider .posuvneTeckySlideru{
+        bottom: 120px;
+    }
+}  
+
+
+/* ---------- Landing page - responzivita ------------- */
+
+/* ------------------------------------------------- Landing page ------------------------------------------------- */
+
+/* --------------------------------------------- Box s rýchlými odkazy -------------------------------------------- */
+
+section.boxy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 82%;
+    margin: -160px 9% 0 9%;
+    z-index: 2;
+}
+
+section.boxy .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 440px;
+    border: 8px solid #eee;
+    background-color: #FFF;
+    transition: transform 0.5s ease;
+}
+
+section.boxy .box:nth-child(1) {
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+section.boxy .box:nth-child(3) {
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+section.boxy .box.aktualniBox {
+    width: 420px;
+    height: 470px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006c4e;
+}
+
+section.boxy .box h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 35px;
+}
+
+section.boxy .box.aktualniBox h3 {
+    color: #FFF;
+}
+
+section.boxy .box h3 span {
+    font-weight: bolder;
+    color: #006c4e;
+}
+
+section.boxy .box.aktualniBox h3 span {
+    color: #f68d1f;
+}
+
+section.boxy .box button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 82%;
+    padding: 10px 8px;
+    border: none;
+    border-top: 1px solid rgb(53, 53, 53, .2);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section.boxy .box button:hover {
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+section.boxy .box.aktualniBox button:hover {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255, .1);
+}
+
+section.boxy .box button img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+section.boxy .box button p {
+    font-size: 15px;
+    text-align: left;
+    width: calc(100% - 55px);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+section.boxy .box button:hover p {
+    color: #006c4e;
+}
+
+section.boxy .box.aktualniBox button p {
+    color: #FFF;
+}
+
+section.boxy .box.aktualniBox button:hover p {
+    color: #f68d1f;
+}
+
+section.boxy .box button i {
+    font-size: 18px;
+    color: rgb(53, 53, 53, .4);
+}
+
+section.boxy .box.aktualniBox button i {
+    color: rgb(255, 255, 255, .4);
+}
+
+section.boxy button {
+    display: none;
+}
+
+/* ------- Box s rýchlými odkazy - responzivita ------- */
+
+@media screen and (max-width: 1350px) {
+    section.boxy {
+        width: 92%;
+        margin: -160px 4% 0 4%;
+    }
+}
+
+@media (max-width: 1200px) {
+    section.boxy .box {
+        display: none;
+    }
+
+    section.boxy .box:nth-child(1) {
+        border-right: 8px solid #eee;
+        border-radius: 10px;
+    }
+
+    section.boxy .box:nth-child(3) {
+        border-left: 8px solid #eee;
+        border-radius: 10px;
+    }
+    
+    section.boxy .box.aktualniBox {
+        display: flex;
+        width: 400px;
+        height: 440px;
+        border: none;
+    }
+
+    section.boxy button#predchoziBox,
+    section.boxy button#nasledujiciBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        border: none;
+        color: #353535;
+        background-color: transparent;
+        font-family: monospace;
+        font-weight: bold;
+        transition: .5s;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    section.boxy button#predchoziBox:hover,
+    section.boxy button#nasledujiciBox:hover {
+        color: #f68d1f;
+    }
+
+    section.boxy button#predchoziBox {
+        left: calc(50% - 250px);
+    }
+
+    section.boxy button#nasledujiciBox {
+        right: calc(50% - 250px);
+    }
+}
+
+@media (max-width: 550px) {
+    section.boxy .box,
+    section.boxy .box.aktualniBox {
+        width: 82%;
+        max-width: 400px;
+    }
+
+    section.boxy button#predchoziBox,
+    section.boxy button#nasledujiciBox {
+        font-size: 40px;
+    }
+
+    section.boxy button#predchoziBox {
+        left: -10px;
+    }
+
+    section.boxy button#nasledujiciBox {
+        right: -10px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.boxy .box,
+    section.boxy .box.aktualniBox {
+        height: 420px;
+    }
+
+    section.boxy .box h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    section.boxy .box button {
+        width: 88%;
+        padding: 8px 6px;
+    }
+    
+    section.boxy .box button img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    section.boxy .box button p {
+        width: calc(100% - 50px);
+    }
+    
+    section.boxy .box button i {
+        font-size: 17px;
+    }
+
+    section.boxy button#predchoziBox,
+    section.boxy button#nasledujiciBox {
+        font-size: 36px;
+    }
+
+    section.boxy button#predchoziBox {
+        left: 0;
+    }
+
+    section.boxy button#nasledujiciBox {
+        right: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    section.boxy .box h3 {
+        font-size: 21px;
+    }
+    
+    section.boxy .box button {
+        width: 90%;
+    }
+    
+    section.boxy .box button img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    section.boxy .box button p {
+        font-size: 14px;
+        width: calc(100% - 47px);
+    }
+    
+    section.boxy .box button i {
+        font-size: 16px;
+    }
+
+    section.boxy button#predchoziBox,
+    section.boxy button#nasledujiciBox {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    section.boxy {
+        margin-top: -110px;
+    }
+}
+
+/* ------- Box s rýchlými odkazy - responzivita ------- */
+
+/* --------------------------------------------- Box s rýchlými odkazy -------------------------------------------- */
+
+/* ------------------------------------------------ Ústředí AOPK ČR ----------------------------------------------- */
+
+section.regionalniPracoviste {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    padding: 80px 0 30px 0;
+}
+
+section.regionalniPracoviste .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    margin-left: 9%;
+    padding-right: 70px;
+}
+
+section.regionalniPracoviste .left .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin-bottom: 25px;
+    gap: 8px;
+}
+
+section.regionalniPracoviste .left .text h4 {
+    color: #353535;
+    font-size: 25px;
+}
+
+section.regionalniPracoviste .left .text h4 span {
+    font-weight: bold;
+    color: #006c4e;
+}
+
+section.regionalniPracoviste .left .text p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+}
+
+section.regionalniPracoviste .left img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+section.regionalniPracoviste .right {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 45%;
+    height: 530px;
+    padding: 40px;
+    border-left: 4px solid #f68d1f;
+    background-image: url(../img/pozadi-titulky-casopisu.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.regionalniPracoviste .right h4 {
+    color: #353535;
+    font-size: 25px;
+}
+
+section.regionalniPracoviste .right h4 span {
+    font-weight: bold;
+    color: #006c4e;
+}
+
+section.regionalniPracoviste .right p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #353535;
+    margin: 25px 0 25px 25px;
+}
+
+section.regionalniPracoviste .right button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 250px;
+    height: 50px;
+    padding: 0 25px;
+    margin-left: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006c4e;
+    transition: .5s;
+    cursor: pointer;
+}
+
+section.regionalniPracoviste .right button:hover {
+    background-color: #f68d1f;
+}
+
+section.regionalniPracoviste .right button span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+section.regionalniPracoviste .right button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    color: #353535;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: .5s;
+}
+
+section.regionalniPracoviste .right button:hover i {
+    color: #f68d1f;
+}
+
+section.regionalniPracoviste .right img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin-left: 25px;
+    top: 180px;
+}
+
+/* -------------- Ústředí AOPK ČR - responzivita ------------- */
+
+@media screen and (max-width: 1440px) {
+    section.regionalniPracoviste {
+        align-items: center;
+        flex-direction: column;
+        width: 82%;
+        margin: 0 9% 50px 9%;
+    }
+    
+    section.regionalniPracoviste .left {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 0;
+        margin-bottom: 70px;
+    }
+    
+    section.regionalniPracoviste .left .text {
+        max-width: 750px;
+    }
+    
+    section.regionalniPracoviste .right {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 900px;
+        padding: 40px;
+    }
+
+    section.regionalniPracoviste .right h4 {
+        margin-top: 60px;
+    }
+    
+    section.regionalniPracoviste .right p,
+    section.regionalniPracoviste .right button,
+    section.regionalniPracoviste .right img  {
+        margin-left: 0;
+    }
+
+    section.regionalniPracoviste .right button {
+        min-height: 55px;
+    }
+
+    section.regionalniPracoviste .right img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.regionalniPracoviste .left .text {
+        max-width: 100%;
+    }
+
+    section.regionalniPracoviste .right h4 {
+        margin-top: 60px;
+    }
+
+    section.regionalniPracoviste .right button {
+        width: 220px;
+        min-height: 50px;
+    }
+
+    section.regionalniPracoviste .right img {
+        width: 250px;
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.regionalniPracoviste .left {
+        margin-bottom: 50px;
+    }
+
+    section.regionalniPracoviste .left .text h4 {
+        font-size: 22px;
+    }
+
+    section.regionalniPracoviste .right h4 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    section.regionalniPracoviste .right p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    section.regionalniPracoviste .right img {
+        width: 220px;
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.regionalniPracoviste .right button {
+        width: 200px;
+        padding: 0 12px;
+    }
+
+    section.regionalniPracoviste .right img {
+        width: 200px;
+        top: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.regionalniPracoviste .right img {
+        width: 180px;
+    }
+}
+
+/* -------------- Ústředí AOPK ČR - responzivita ------------- */
+
+/* ------------------------------------------------ Ústředí AOPK ČR ----------------------------------------------- */
+
+/* --------------------------------------------- Aktuality a kalendář --------------------------------------------- */
+
+section.aktualityKalendar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 400px 9% 80px 9%;
+    background-image: url(../img/Aktuality/aktuality-pozadi.webp);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+section.aktualityKalendar .aktuality {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    padding: 40px;
+    gap: 40px;
+    border-radius: 20px 0 0 0;
+    background-color: #FFF;
+}
+
+section.aktualityKalendar .aktuality h4 {
+    color: #353535;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.aktualityKalendar .aktuality h4 span {
+    color: #006c4e;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .imgBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox:nth-child(2) .imgBox {
+    background-image: url(../img/Aktuality/projekt-jedna-priroda.webp);
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox:nth-child(3)  .imgBox{
+    background-image: url(../img/Aktuality/ministr-zivotniho-prostredi.webp);
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox:nth-child(4) .imgBox {
+    background-image: url(../img/Aktuality/mapovani-selem-v-beskydech.webp);
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox:nth-child(5) .imgBox {
+    background-image: url(../img/Aktuality/bobr-se-na-padrtich-cini.webp);
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .imgBox p {
+    width: 100%;
+    padding: 18px 10px;
+    font-size: 15px;
+    color: #FFF;
+    border-radius: 5px 0 0 5px;
+    background-color: rgb(0, 108, 78, .7);
+    backdrop-filter: blur(2px);
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 82%;
+    height: auto;
+    padding: 20px;
+    margin-top: -80px;
+    border-radius: 8px 0 8px 8px;
+    background-color: #FFF;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox h5 {
+    font-size: 18px;
+    color: #006c4e;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox p {
+    font-size: 15px;
+    color: #353535;
+    margin: 8px 0 25px 0;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox button,
+section.aktualityKalendar .aktuality button,
+section.aktualityKalendar .kalendar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    background-color: #006c4e;
+    font-size: 15px;
+    padding: 12px 16px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox button span,
+section.aktualityKalendar .aktuality button span,
+section.aktualityKalendar .kalendar button span {
+    color: #FFF;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox button i,
+section.aktualityKalendar .aktuality button i,
+section.aktualityKalendar .kalendar button i {
+    font-size: 16px;
+    color: #FFF;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox button:hover,
+section.aktualityKalendar .aktuality button:hover,
+section.aktualityKalendar .kalendar button:hover {
+    background-color: #f68d1f;
+}
+
+section.aktualityKalendar .aktuality .aktualitaBox .textBox button:hover i,
+section.aktualityKalendar .aktuality button:hover i,
+section.aktualityKalendar .kalendar button:hover i {
+    transform: translateX(4px);
+}
+
+section.aktualityKalendar .aktuality button.vse,
+section.aktualityKalendar .kalendar button.vse {
+    margin-top: 50px;
+    padding: 20px 34px;
+    background-color: #f68d1f;
+}
+
+section.aktualityKalendar .kalendar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    padding: 60px;
+    gap: 20px;
+    border-radius: 0 20px 0 0;
+    background-color: #FFF;
+}
+
+section.aktualityKalendar .kalendar h4 {
+    color: #353535;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.aktualityKalendar .kalendar h4 span {
+    color: #006c4e;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(2) {
+    background-image: url(../img/Kalendar/padesat-let-v-trezoru.webp);
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(3) {
+    background-image: url(../img/Kalendar/fotosoutez-pro-deti.webp);
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(4) {
+    background-image: url(../img/Kalendar/pochod-blanskym-lesem.webp);
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(5) {
+    background-image: url(../img/Kalendar/za-prirodou-u-becova.webp);
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(6) {
+    background-image: url(../img/Kalendar/mokrady-a-obojzivelnici.webp);
+}
+
+section.aktualityKalendar .kalendar .kalendarBox .datum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: auto;
+    min-width: 75px;
+    height: auto;
+    min-height: 103px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border-top: 8px solid #006c4e;
+    background-color: #FFF;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox .datum p {
+    font-size: 12px;
+    color: #006c4e;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox .datum p span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f68d1f;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(4) .datum p span,
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(5) .datum p span,
+section.aktualityKalendar .kalendar .kalendarBox:nth-child(6) .datum p span {
+    font-size: 30px;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox .datum hr {
+    width: 34px;
+    height: 1px;
+    margin: 4px 0;
+    border: none;
+    background-color: #006c4e;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #006c4e;
+
+}
+
+section.aktualityKalendar .kalendar .kalendarBox i {
+    font-size: 30px;
+    color: rgb(53, 53, 53, .5);
+    transition: .5s;
+}
+
+section.aktualityKalendar .kalendar .kalendarBox:hover i {
+    color: #f68d1f;
+}
+
+/* -------- Aktuality a kalendář - responzivita ------- */
+
+@media screen and (max-width: 1440px) {
+    section.aktualityKalendar .aktuality {
+        width: 60%;
+    }
+    
+    section.aktualityKalendar .kalendar {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    section.aktualityKalendar {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    section.aktualityKalendar .aktuality {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    section.aktualityKalendar .kalendar {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section.aktualityKalendar .aktuality h4,
+    section.aktualityKalendar .kalendar h4 {
+        margin-bottom: 18px;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox {
+        align-items: center;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox .imgBox {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    
+    section.aktualityKalendar .aktuality .aktualitaBox .imgBox p {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox {
+        border-radius: 8px;
+    }
+
+    section.aktualityKalendar .kalendar {
+        padding: 40px;
+    }
+
+    section.aktualityKalendar .aktuality button.vse,
+    section.aktualityKalendar .kalendar button.vse {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.aktualityKalendar .aktuality,
+    section.aktualityKalendar .kalendar {
+        padding: 30px 25px;
+    }
+
+    section.aktualityKalendar .aktuality h4,
+    section.aktualityKalendar .kalendar h4 {
+        margin-bottom: 15px;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox {
+        align-items: center;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox .imgBox {
+        height: 220px;
+    }
+    
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox {
+        width: 92%;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox h5 {
+        font-size: 16px;
+    }
+    
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox p {
+        margin: 8px 0 20px 0;
+    }
+    
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox button {
+        text-align: left;
+        padding: 10px 14px;
+    }
+
+    section.aktualityKalendar .kalendar h4 {
+        font-size: 22px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox {
+        padding: 18px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox .datum {
+        min-width: 72px;
+        min-height: 98px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox .datum p span {
+        font-size: 18px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox:nth-child(4) .datum p span,
+    section.aktualityKalendar .kalendar .kalendarBox:nth-child(5) .datum p span,
+    section.aktualityKalendar .kalendar .kalendarBox:nth-child(6) .datum p span,
+    section.aktualityKalendar .kalendar .kalendarBox i {
+        font-size: 26px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox .datum hr {
+        width: 32px;
+        margin: 3px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {   
+    section.aktualityKalendar .aktuality h4,
+    section.aktualityKalendar .kalendar h4 {
+        margin-bottom: 0;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox {
+        width: 96%;
+    }
+
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox h5 {
+        font-size: 15px;
+    }
+    
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox ,
+    section.aktualityKalendar .aktuality .aktualitaBox .textBox button,
+    section.aktualityKalendar .kalendar .kalendarBox {
+        font-size: 14px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox {
+        padding: 18px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox .datum {
+        min-width: 65px;
+        min-height: 90px;
+    }
+
+    section.aktualityKalendar .kalendar .kalendarBox .datum p {
+        font-size: 11px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox .datum p span {
+        font-size: 16px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox:nth-child(4) .datum p span,
+    section.aktualityKalendar .kalendar .kalendarBox:nth-child(5) .datum p span,
+    section.aktualityKalendar .kalendar .kalendarBox:nth-child(6) .datum p span,
+    section.aktualityKalendar .kalendar .kalendarBox i {
+        font-size: 24px;
+    }
+    
+    section.aktualityKalendar .kalendar .kalendarBox .datum hr {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.aktualityKalendar .kalendar .kalendarBox {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+/* -------- Aktuality a kalendář - responzivita ------- */
+
+/* --------------------------------------------- Aktuality a kalendář --------------------------------------------- */
+
+/* --------------------------------------------------- Partneři --------------------------------------------------- */
+
+section.partneri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0 9% 80px 9%;
+}
+
+section.partneri h4 {
+    color: #353535;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+section.partneri h4 span {
+    font-weight: bold;
+    color: #006c4e;
+}
+
+section.partneri p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+    text-align: justify;
+}
+
+section.partneri .partneriIMG {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    gap: 40px 120px;
+}
+
+section.partneri .partneriIMG img {
+    width: auto;
+    height: 100px;
+    filter: grayscale(0);
+    transition: .5s;
+}
+
+section.partneri .partneriIMG img:nth-child(2) {
+    height: 150px;
+}
+
+section.partneri .partneriIMG img:nth-child(3) {
+    position: relative;
+    height: 50px;
+    margin-top: 40px;
+}
+
+section.partneri .partneriIMG img:hover {
+    filter: grayscale(100%);
+}
+
+/* -------------- Partneři - responzivita ------------- */
+
+@media screen and (max-width: 1200px) {
+    section.partneri .partneriIMG img {
+        height: 80px;
+    }
+    
+    section.partneri .partneriIMG img:nth-child(2) {
+        height: 130px;
+    }
+    
+    section.partneri .partneriIMG img:nth-child(3) {
+        height: 40px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.partneri h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    section.partneri p {
+        text-align: center;
+    }
+
+    section.partneri .partneriIMG {
+        gap: 30px 90px;
+    }
+
+    section.partneri .partneriIMG img {
+        height: 60px;
+    }
+    
+    section.partneri .partneriIMG img:nth-child(2) {
+        height: 100px;
+    }
+    
+    section.partneri .partneriIMG img:nth-child(3) {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.partneri .partneriIMG img {
+        height: 50px;
+    }
+
+    section.partneri .partneriIMG img:nth-child(2) {
+        height: 80px;
+    }
+    
+    section.partneri .partneriIMG img:nth-child(3) {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.partneri .partneriIMG img {
+        height: 50px;
+    }
+    
+    section.partneri .partneriIMG img:nth-child(3),
+    section.partneri .partneriIMG img:nth-child(5) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* -------------- Partneři - responzivita ------------- */
+
+/* --------------------------------------------------- Partneři --------------------------------------------------- */

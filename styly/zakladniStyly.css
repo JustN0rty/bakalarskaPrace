@@ -1,0 +1,971 @@
+/* -------------------------------------------------------- Fonty -------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* -------------------------------------------------------- Fonty -------------------------------------------------------- */
+
+/* --------------------------------------------------------- Body -------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #FFF;
+    color: #353535;
+    font-family: 'Inter';
+    width: 100%;
+    max-width: 1920px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------- Body -------------------------------------------------------- */
+
+/* -------------------------------------------------------- Header ------------------------------------------------------- */
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+}
+
+/* -------------------- Header - top nav --------------------- */
+
+header .topNav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    padding: 0 4%;
+    background-color: rgb(53, 53, 53, .55);
+}
+
+header .topNav a:nth-child(1) {
+    display: none;
+}
+
+header .topNav a {
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+}
+
+header .topNav a:hover,
+header .topNav .dropbtn:hover,
+header .topNav .dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+header .topNav .dropbtn {
+    font-size: 16px;
+    font-weight: 500;
+    height: 100%;
+    padding: 0 16px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+header .topNav .dropbtn i {
+    margin-left: 8px;
+}
+
+header .topNav .dropdown-content {
+    position: absolute;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    top: 45px;
+    right: 0;
+    padding-right: 4%;
+    padding-left: 10px;
+    background-color: rgb(53, 53, 53, .55);
+    z-index: 1;
+}
+
+header .topNav .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* -------------------- Header - top nav --------------------- */
+
+/* -------------------- Header - main nav -------------------- */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding-top: 32px;
+}
+
+header nav .navUp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #f68d1f;
+}
+
+header nav .navUp .left a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 160px;
+    height: 90px;
+    padding-bottom: 10px;
+}
+
+header nav .navUp .left a img {
+    width: auto;
+    height: 100%;
+}
+
+header nav .navUp .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: calc(100% - 160px);
+    height: 90px;
+}
+
+header nav .navUp .right .rightUp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    padding: 0 0 15px 25px;
+    gap: 18px;
+}
+
+header nav .navUp .right .rightUp .vyhledavaciPole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 35px;
+    background-color: rgb(53, 53, 53, .55);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+header nav .navUp .right .rightUp .vyhledavaciPole:hover {
+    border: 1px solid #fff;
+}
+
+header nav .navUp .right .rightUp .vyhledavaciPole input {
+    border: none;
+    outline: none;
+    width: 260px;
+    height: 100%;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 20px;
+    background-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+
+header nav .navUp .right .rightUp .vyhledavaciPole input::placeholder {
+    font-size: 15px;
+    color: #eee;
+}
+
+header nav .navUp .right .rightUp .vyhledavaciPole i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 35px;
+    font-size: 15px;
+    color: #eee;
+    border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header nav .navUp .right .rightUp .vyhledavaciPole i:hover {
+    background-color: #006c4e;
+}
+
+header nav .navUp .right .rightUp img {
+    width: auto;
+    height: 24px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header nav .navUp .right .rightUp .menu-btn {
+    display: none;
+}
+
+header nav .navUp .right .rightDown {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    width: max-content;
+    height: 100%;
+    padding-left: 25px;
+    gap: 26px;
+}
+
+header nav .navUp .right .rightDown .respDropdown,
+header nav .navUp .right .rightDown a.uvodniStranka,
+header nav .navUp .right .rightDown a i {
+    display: none;
+}
+
+header nav .navUp .right .rightDown a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 10px 14px;
+    border-radius: 10px 10px 0 0;
+    transition: .5s;
+}
+
+header nav .navUp .right .rightDown a:hover,
+header nav .navUp .right .rightDown a.aktivni {
+    background-color: #f68d1f;
+    color: #FFF;
+}
+
+header nav .navDown {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    padding-left: 25px;
+    gap: 30px;
+    background-color: rgb(53, 53, 53, .55);
+}
+
+header nav .aktualni {
+    display: flex;
+}
+
+header nav .navDown a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #FFF;
+    transition: .5s;
+}
+
+header nav .navDown a:hover,
+header nav .navDown a.aktivni {
+    color: #f68d1f;
+}
+
+/* -------------------- Header - main nav -------------------- */
+
+/* ------------------ Header - responzivita ------------------ */
+
+@media screen and (max-width: 1440px) {
+    header nav .navUp .left a {
+        width: 140px;
+    }
+    
+    header nav .navUp .left a img {
+        height: 90%;
+    }
+    
+    header nav .navUp .right {
+        width: calc(100% - 140px);
+    }
+    
+    header nav .navUp .right .rightUp .vyhledavaciPole {
+        height: 32px;
+    }
+    
+    header nav .navUp .right .rightUp .vyhledavaciPole i {
+        height: 32px;
+    }
+    
+    header nav .navUp .right .rightUp img {
+        height: 23px;
+    }
+    
+    header nav .navUp .right .rightDown {
+        gap: 22px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    header nav {
+        width: 100%;
+        padding: 32px 50px 0 50px;
+    }
+    
+    header nav .navUp {
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: none;
+    }
+    
+    header nav .navUp .left a {
+        padding: 0;
+        margin-left: 10px;
+    }
+    
+    header nav .navUp .left a img {
+        width: auto;
+        height: 90%;
+    }
+    
+    header nav .navUp .right {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    
+    header nav .navUp .right .rightUp {
+        padding: 0;
+    }
+
+    header nav .navUp .right .rightUp .menu-btn {
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    header nav .navUp .right .rightUp i.fa-bars {
+        color: #FFF;
+        font-size: 30px;
+    }
+
+    header nav .navUp .right .rightUp i.fa-times {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+
+    header nav .navUp .right .rightDown {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        width: 500px;
+        right: -500px;
+        top: 0;
+        margin: 0;
+        padding: 80px 50px 80px 15px;
+        text-align: center;
+        transition: all 0.3s ease;
+        background-color: #006c4e;
+        z-index: 101;
+    }
+
+    header nav .navUp .right .rightDown.respNav {
+        display: flex;
+        right: 0;
+    }
+
+    header nav .navUp .right .rightDown a.uvodniStranka {
+        display: flex;
+        margin-right: 28px;
+    }
+
+    header nav .navUp .right .rightDown a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+    header nav .navUp .right .rightDown a.aktivni {
+        background-color: rgb(255, 255, 255, .2);
+    }
+    
+    header nav .navUp .right .rightDown a:hover {
+        background-color: transparent;
+        color: #f68d1f;
+    }
+
+    header nav .navUp .right .rightDown a i {
+        display: block;
+        margin-left: 10px;
+    }
+
+    header nav .navDown {
+        display: none;
+    }
+
+    header nav .navUp .right .rightDown .respDropdown {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: -10px 20px 0 0;
+        border-right: 1px solid #fff;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .topNav {
+        display: none;
+    }
+
+    header nav {
+        padding: 20px 30px 0 30px;
+    }
+
+    header nav .navUp .left a {
+        width: auto;
+        height: auto;
+    }
+    
+    header nav .navUp .left a img {
+        width: auto;
+        height: 70px;
+    }
+
+    header nav .navUp .right .rightUp i.fa-times {
+        position: static;
+        top: 20px;
+        right: 20px;
+    }
+
+    header nav .navUp .right .rightDown {
+        display: none;
+        justify-content: flex-start;
+        position: absolute;
+        height: auto;
+        min-height: 100vh;
+        top: 0;
+        right: 0
+    }
+
+    header nav .navUp .right .rightDown .topNav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 150px;
+        background-color: transparent;
+    }
+
+    header nav .navUp .right .rightDown .topNav a:nth-child(1) {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header nav .navUp .right .rightDown .topNav a:nth-child(2) {
+        display: none;
+    }
+
+    header nav .navUp .right .rightDown .topNav .dropbtn {
+        text-decoration: underline;
+    }
+
+    header nav .navUp .right .rightDown .topNav .dropdown-content {
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        top: 10px;
+        right: 20px;
+        padding-left: 0;
+        border-right: 1px solid #FFF;
+        background-color: transparent;
+    }
+
+    header nav .navUp .right .rightDown .topNav .dropdown-content a {
+        text-align: right;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav .navUp .right .rightUp .vyhledavaciPole {
+        height: auto;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+    }
+
+    header nav .navUp .right .rightUp .vyhledavaciPole:hover {
+        background-color: #006c4e;
+        border: none;
+    }
+
+    header nav .navUp .right .rightUp .vyhledavaciPole input {
+        display: none;
+    }
+
+    header nav .navUp .right .rightUp .vyhledavaciPole input.respAktivni {
+        position: absolute;
+        display: block;
+        top: 100px;
+        width: 92%;
+        left: 4%;
+        height: auto;
+        padding: 12px 90px 12px 16px;
+        border-radius: 5px;
+        background-color: rgb(53, 53, 53, .55);
+    }
+
+    header nav .navUp .right .rightUp .vyhledavaciPole button {
+        position: absolute;
+        top: 100px;
+        right: 4%;
+        padding: 13px 16px;
+        color: #FFF;
+        background-color: #006c4e;
+        border-radius: 0 5px 5px 0;
+        border: none;
+    }
+
+    header nav .navUp .right .rightUp .vyhledavaciPole i {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+    }
+
+    header nav .navUp .right .rightUp i.fa-times {
+        position: fixed;
+        top: 40px;
+        right: 30px;
+    }
+
+    header nav .navUp .right .rightDown {
+        width: 100%;
+        right: -100%;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+
+    header nav .navUp .right .rightDown.respNav {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    header nav .navUp .right .rightDown .respDropdown {
+        align-items: flex-start;
+        margin: -10px 0 0 20px;
+        border-left: 1px solid #fff;
+        border-right: none;
+        text-align: left;
+    }
+
+    header nav .navUp .right .rightDown .topNav {
+        align-items: flex-start;
+    }
+
+    header nav .navUp .right .rightDown .topNav button {
+        text-align: left;
+    }
+
+    header nav .navUp .right .rightDown .topNav .dropdown-content {
+        align-items: flex-start;
+        right: 0;
+        left: 20px;
+        border-left: 1px solid #FFF;
+        border-right: none;
+    }
+
+    header nav .navUp .right .rightDown .topNav .dropdown-content a {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header nav .navUp .left a img {
+        height: 60px;
+    }
+
+    header nav .navUp .right .rightUp i.fa-bars,
+    header nav .navUp .right .rightUp i.fa-times {
+        font-size: 24px;
+    }
+
+    header nav .navUp .right .rightDown {
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    header nav .navUp .right .rightDown.respNav a {
+        font-size: 14px;
+    }
+
+    header nav .navUp .right .rightDown .topNav a img {
+        width: 170px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header nav .navUp .left a img {
+        display: none;
+    }
+
+    header nav .navUp .right .rightUp i.fa-times {
+        top: 27px;
+    }
+
+    header nav .navUp .right .rightDown {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    header nav .navUp .right .rightDown {
+        display: none;
+        position: absolute;
+        height: auto;
+        min-height: 100vh;
+        top: 0;
+        right: 0
+    }
+}
+
+/* ------------------ Header - responzivita ------------------ */
+
+/* -------------------------------------------------------- Header ------------------------------------------------------- */
+
+/* -------------------------------------------------------- Zápatí ------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+footer .zapatiTop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 40px 80px 20px 80px;
+    background-color: #3f3b33;
+    border-top: 4px solid #f68d1f;
+}
+
+footer .zapatiTop .sloupce {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    gap: 6px 0;
+    padding: 8px;
+}
+
+footer .zapatiTop .sloupce:nth-child(3) {
+    padding-top: 63px;
+}
+
+footer .zapatiTop .sloupce h4 {
+    font-size: 25px;
+    color: #FFF;
+    margin-bottom: 25px;
+}
+
+footer .zapatiTop .sloupce a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #FFF;
+}
+
+footer .zapatiTop .sloupce a i {
+    font-size: 7px;
+    color: #f68d1f;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+footer .zapatiTop .sloupce a p:hover {
+    text-decoration: underline;
+}
+
+footer .zapatiTop .sloupce img {
+    width: 190px;
+    height: auto;
+}
+
+footer .zapatiTop .sloupce .radek {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+footer .zapatiTop .sloupce .radek a i{
+    font-size: 26px;
+    cursor: pointer;
+    transition: .5s;
+    color: #FFF;
+    border-radius: 0;
+}
+
+footer .zapatiTop .sloupce .radek a:hover:nth-child(1) i {
+    color: #1877F2;
+}
+
+footer .zapatiTop .sloupce .radek a:hover:nth-child(2) i {
+    background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+footer .zapatiTop .sloupce .radek a:hover:nth-child(3) i {
+    color: #0077B5;
+}
+
+footer .zapatiTop .sloupce .radek a:hover:nth-child(4) i {
+    color: #FF0000;
+}
+
+footer .zapatiBottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    padding: 20px 80px;
+    gap: 12px;
+    background-color: #36322a;
+}
+
+footer .zapatiBottom a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transition: .5s;
+}
+
+footer .zapatiBottom a:hover {
+    text-decoration: underline;
+}
+
+footer .zapatiBottom p.credits {
+    font-size: 14px;
+    margin-left: 100px;
+    color: #FFF;
+}
+
+footer .zapatiProjekt {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    padding: 20px 80px;
+    gap: 4px;
+    background-color: #36322a;
+    border-top: 1px solid rgb(255, 255, 255, .25);
+}
+
+footer .zapatiProjekt p,
+footer .zapatiProjekt .line a {
+    font-size: 13px;
+    color: #FFF;
+}
+
+footer .zapatiProjekt .line {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .zapatiProjekt .line a {
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+/* ----------------- Zápatí - responzivita ------------------- */
+
+@media screen and (max-width: 1400px) {
+    footer .zapatiTop {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 20px;
+    }
+
+    footer .zapatiTop .sloupce:nth-child(1) {
+        order: 2;
+    }
+    
+    footer .zapatiTop .sloupce:nth-child(2) {
+        order: 1;
+        padding-bottom: 4px;
+        width: 370px;
+    }
+    
+    footer .zapatiTop .sloupce:nth-child(3) {
+        order: 3;
+        padding-top: 0;
+        width: 370px;
+    }
+    
+    footer .zapatiTop .sloupce:nth-child(4) {
+        order: 4;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer .zapatiTop {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0 20px;
+        padding: 40px 20px 20px 20px;
+    }
+
+    footer .zapatiTop .sloupce {
+        width: 370px;
+    }
+
+    footer .zapatiTop .sloupce:nth-child(1) {
+        order: 1;
+        margin-bottom: 25px;
+    }
+    
+    footer .zapatiTop .sloupce:nth-child(2) {
+        order: 2;
+    }
+
+    footer .zapatiTop .sloupce:nth-child(3) {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer .zapatiTop {
+        justify-items: start;
+    }
+
+    footer .zapatiTop .sloupce,
+    footer .zapatiTop .sloupce:nth-child(2),
+    footer .zapatiTop .sloupce:nth-child(3) {
+        width: auto;
+    }
+
+    footer .zapatiBottom {
+        justify-content: center;
+    }
+
+    footer .zapatiBottom p.credits {
+        margin-left: 25px;
+    }
+
+    footer .zapatiProjekt {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    footer .zapatiProjekt {
+        gap: 10px;
+    }
+
+    footer .zapatiProjekt .line {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    footer .zapatiTop .sloupce h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    footer .zapatiTop .sloupce a {
+        font-size: 14px;
+    }
+    
+    footer .zapatiTop .sloupce a i {
+        font-size: 6px;
+    }
+
+    footer .zapatiTop .sloupce img {
+        width: 170px;
+    }
+    
+    footer .zapatiBottom {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .zapatiBottom p {
+        display: none;
+    }
+
+    footer .zapatiBottom p.credits {
+        display: block;
+        margin: 15px 0 0 0;
+    }
+}
+
+/* ----------------- Zápatí - responzivita ------------------- */
+
+/* -------------------------------------------------------- Zápatí ------------------------------------------------------- */
