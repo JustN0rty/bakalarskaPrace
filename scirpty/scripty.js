@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
             linksData.forEach(linkText => {
                 const link = document.createElement('a');
                 const sanitizedLinkText = sanitizeString(linkText);
-                const uniqueUrl = `file:///C:/Users/jbart/OneDrive%20-%20Univerzita%20Hradec%20Králové/Dokumenty/Škola/Vysoká/Bakalářka/Prototyp/${sectionName}.html`;
+                const uniqueUrl = `https://justn0rty.github.io/bakalarskaPrace/${sectionName}.html`;
                 /*--- const uniqueUrl = `https://nature.cz/${sectionName}/${sanitizedLinkText}`; ---*/
                 link.href = uniqueUrl;
                 link.textContent = linkText;
