@@ -383,7 +383,7 @@ section.boxy .box button span {
     transition: 0.3s;
 }
 
-section.boxy .box button:hover p {
+section.boxy .box button:hover span {
     color: #006c4e;
 }
 
@@ -391,7 +391,7 @@ section.boxy .box.aktualniBox button span {
     color: #FFF;
 }
 
-section.boxy .box.aktualniBox button:hover p {
+section.boxy .box.aktualniBox button:hover span {
     color: #f68d1f;
 }
 
