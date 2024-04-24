@@ -141,7 +141,7 @@ section.potrebujiVyriditOdkazy .sloupec a i {
 section.potrebujiVyriditOdkazy .sloupec a p {
     color: #006c4e;
     margin: 0;
-    text-align: sloupec;
+    text-align: left;
 }
 
 section.potrebujiVyriditOdkazy .sloupec a:hover p {
